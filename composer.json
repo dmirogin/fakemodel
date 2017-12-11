@@ -1,0 +1,30 @@
+{
+  "name": "dmirogin/fakeme",
+  "description": "Test helper for Yii2 projects that make and persist models",
+  "keywords": ["yii2", "tests"],
+  "type": "yii2-extension",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/dmirogin/fakeme/issues",
+    "source": "https://github.com/dmirogin/fakeme"
+  },
+  "authors": [
+    {
+      "name": "Dmitry Dorogin",
+      "email": "dmirogin@ya.ru"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.0",
+    "yiisoft/yii2": "2.*",
+    "fzaninotto/faker": "^1.7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "dmirogin\\fakeme\\": "src/"
+    }
+  }
+}
