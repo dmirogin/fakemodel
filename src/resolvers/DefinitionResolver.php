@@ -12,7 +12,7 @@ class DefinitionResolver
     private $definitions;
 
     /**
-     * @return array
+     * @inheritdoc
      */
     public function getDefinitions(): array
     {
@@ -20,8 +20,7 @@ class DefinitionResolver
     }
 
     /**
-     * @param array $definitions
-     * @return DefinitionResolver
+     * @inheritdoc
      */
     public function setDefinitions(array $definitions): self
     {
@@ -31,12 +30,9 @@ class DefinitionResolver
     }
 
     /**
-     * Resolve definitions for class
-     *
-     * @param string $className
-     * @return array|mixed
+     * @inheritdoc
      */
-    public function resolve(string $className)
+    public function resolve(string $className): array
     {
         $fakeAttributes = [];
 
