@@ -1,6 +1,4 @@
 0.1.0
 
-States
-- Reorganize tests to take step further
-
-MultiRecords
+- Resolvers
+- Go through coverage and reorganize tests
