@@ -7,4 +7,5 @@ use yii\base\Model;
 class BaseModel extends Model
 {
     public $field;
+    public $title;
 }

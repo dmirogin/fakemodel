@@ -4,12 +4,12 @@ namespace dmirogin\fakeme\resolvers;
 
 use Faker\Factory;
 
-class DefinitionResolver extends Resolver
+class FakerResolver extends BaseDefinitionResolver
 {
     /**
      * @inheritdoc
      */
-    public function resolve(string $className, array $parameters = []): array
+    public function resolve(string $className, array $states = []): array
     {
         $fakeAttributes = [];
 

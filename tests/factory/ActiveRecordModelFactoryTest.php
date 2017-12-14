@@ -1,17 +1,17 @@
 <?php
 
-namespace tests\builder;
+namespace tests\factory;
 
-use dmirogin\fakeme\ModelBuilder;
+use dmirogin\fakeme\ModelFactory;
 use tests\data\ActiveRecordModel;
 use tests\DBTestCase;
 
-class ActiveRecordModelBuilderTest extends DBTestCase
+class ActiveRecordModelFactoryTest extends DBTestCase
 {
     public function testCreate()
     {
-        $builder = new ModelBuilder();
-        $builder->setClassName(ActiveRecordModel::class);
+        $builder = new ModelFactory();
+        $builder->setModel(ActiveRecordModel::class);
 
         /** @var ActiveRecordModel $model */
         $model = $builder->create();
@@ -21,8 +21,8 @@ class ActiveRecordModelBuilderTest extends DBTestCase
 
     public function testCreateWithData()
     {
-        $builder = new ModelBuilder();
-        $builder->setClassName(ActiveRecordModel::class);
+        $builder = new ModelFactory();
+        $builder->setModel(ActiveRecordModel::class);
 
         /** @var ActiveRecordModel $model */
         $model = $builder->create(['title' => 'string']);

@@ -4,17 +4,17 @@ namespace dmirogin\fakeme\resolvers;
 
 use yii\helpers\ArrayHelper;
 
-class StatesResolver extends Resolver
+class StatesResolver extends BaseDefinitionResolver
 {
     /**
      * @inheritdoc
      */
-    public function resolve(string $className, array $parameters = []): array
+    public function resolve(string $className, array $states = []): array
     {
         $ret = [];
 
         $modelStates = $this->definitions[$className];
-        foreach ($parameters as $state) {
+        foreach ($states as $state) {
             if (array_key_exists($state, $modelStates)) {
                 $stateDefinition = $this->uncoverFields($modelStates[$state]);
                 $ret = ArrayHelper::merge($ret, $stateDefinition);
