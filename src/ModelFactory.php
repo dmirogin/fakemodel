@@ -9,6 +9,13 @@ use yii\base\Model;
 use yii\db\ActiveRecord;
 use yii\helpers\ArrayHelper;
 
+/**
+ * Help to make and store objects.
+ * This factory is another way to work with fixtures.
+ *
+
+ *
+ */
 class ModelFactory extends BaseObject
 {
     /**
