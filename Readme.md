@@ -18,7 +18,7 @@ This factory is another way to work with fixtures and inspired by factories in l
 
 ### Instalation
 ```php
-composer require dmirogin/yii2-js-urlmanager
+composer require dmirogin/fakemodel
 ```
 
 ### How to use
