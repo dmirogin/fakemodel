@@ -1,4 +1,7 @@
 ### FAKE MODEL
+
+![FAKE MODEL](http://dmirogin.ru/assets/images/fakemodel.png)
+
 This package helps you to manage faked models.
 Make, create and store in database.
 This factory is another way to work with fixtures and inspired by factories in laravel.
