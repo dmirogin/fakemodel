@@ -1,4 +1,10 @@
-### FAKE MODEL
+
+<p align="center">
+    <a href="http://www.yiiframework.com/" target="_blank">
+        <img src="http://dmirogin.ru/assets/images/fakemodel.png" width="400" alt="Yii Framework" />
+    </a>
+</p>
+
 This package helps you to manage faked models.
 Make, create and store in database.
 This factory is another way to work with fixtures and inspired by factories in laravel.
