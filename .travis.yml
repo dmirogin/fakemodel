@@ -9,9 +9,6 @@ cache:
     - vendor
     - $HOME/.composer/cache
 install:
-  - phpenv config-rm xdebug.ini || echo "xdebug is not installed"
-  - travis_retry composer self-update && composer --version
-before_script:
-  - pwd
+  - travis_retry composer install --no-interaction
 script:
-  - php ./vendor/bin/phpunit
+  - ./vendor/bin/phpunit
