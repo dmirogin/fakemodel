@@ -4,6 +4,22 @@ namespace dmirogin\fakemodel\resolvers;
 
 use Faker\Factory;
 
+/**
+ * Resolve models by faker.
+ *
+ * ```php
+ * 'class' => \dmirogin\fakemodel\resolvers\FakerResolver::class,
+ *      'definitions' => [
+ *      \app\models\MyModel::class => function (\Faker\Generator $faker) {
+ *          return [
+ *              'id' => $faker->numberBetween(1, 100),
+ *              'username' => $faker->userName,
+ *              'password' => $faker->password
+ *          ];
+ *      }
+ * ]
+ * ```
+ */
 class FakerResolver extends BaseDefinitionResolver
 {
     /**

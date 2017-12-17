@@ -62,3 +62,38 @@ and call just by:
 ```php
 $this->factory(\app\models\MyModel::class)->make();
 ```
+
+### Enhanced example
+
+```php
+'factory' => [
+    'class' => \dmirogin\fakemodel\ModelFactory::class,
+    'resolvers' => [
+        [
+            'class' => \dmirogin\fakemodel\resolvers\FakerResolver::class,
+            'definitions' => [
+                \app\models\MyModel::class => function (\Faker\Generator $faker) {
+                    return [
+                        'id' => $faker->numberBetween(1, 100),
+                        'username' => $faker->userName,
+                        'password' => $faker->password
+                    ];
+                }
+            ]
+        ],
+        [
+            'class' => \dmirogin\fakemodel\resolvers\StatesResolver::class,
+            'definitions' => [
+                \app\models\MyModel::class => [
+                    'admin' => [
+                        'id' => 1
+                    ]
+                ]
+            ]
+        ]
+    ]
+],
+
+Yii::$app->factory->setModel(\app\models\MyModel::class)->states(['admin'])->setAmount(5)->make();
+```
+See more in WIKI.

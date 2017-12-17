@@ -13,8 +13,9 @@ use yii\helpers\ArrayHelper;
  * Help to make and store objects.
  * This factory is another way to work with fixtures.
  *
-
- *
+ * ```
+ * Yii::$app->factory->setModel(Model::class)->make();
+ * ```
  */
 class ModelFactory extends BaseObject
 {

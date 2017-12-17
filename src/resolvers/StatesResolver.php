@@ -4,6 +4,24 @@ namespace dmirogin\fakemodel\resolvers;
 
 use yii\helpers\ArrayHelper;
 
+/**
+ * Resolve model by states
+ *
+ * ```php
+ * 'class' => \dmirogin\fakemodel\resolvers\StatesResolver::class,
+ *      'definitions' => [
+ *      \app\models\MyModel::class => [
+ *          'admin' => [
+ *              'id' => 1
+ *          ]
+ *      ]
+ * ]
+ * ```
+ *
+ * ```
+ * Yii::$app->factory->setModel(\app\models\MyModel::class)->states(['admin'])->make();
+ * ```
+ */
 class StatesResolver extends BaseDefinitionResolver
 {
     /**
