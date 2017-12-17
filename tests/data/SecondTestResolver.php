@@ -2,7 +2,7 @@
 
 namespace tests\data;
 
-use dmirogin\fakeme\resolvers\Resolver;
+use dmirogin\fakemodel\resolvers\Resolver;
 
 class SecondTestResolver implements Resolver
 {

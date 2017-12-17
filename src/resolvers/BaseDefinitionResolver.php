@@ -1,6 +1,6 @@
 <?php
 
-namespace dmirogin\fakeme\resolvers;
+namespace dmirogin\fakemodel\resolvers;
 
 /**
  * Resolve definitions for specified class

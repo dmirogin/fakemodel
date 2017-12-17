@@ -1,12 +1,12 @@
 {
-  "name": "dmirogin/fakeme",
+  "name": "dmirogin/fakemodel",
   "description": "Test helper for Yii2 projects that make and persist models",
   "keywords": ["yii2", "tests"],
   "type": "yii2-extension",
   "license": "MIT",
   "support": {
-    "issues": "https://github.com/dmirogin/fakeme/issues",
-    "source": "https://github.com/dmirogin/fakeme"
+    "issues": "https://github.com/dmirogin/fakemodel/issues",
+    "source": "https://github.com/dmirogin/fakemodel"
   },
   "authors": [
     {
@@ -24,7 +24,7 @@
   },
   "autoload": {
     "psr-4": {
-      "dmirogin\\fakeme\\": "src/"
+      "dmirogin\\fakemodel\\": "src/"
     }
   }
 }

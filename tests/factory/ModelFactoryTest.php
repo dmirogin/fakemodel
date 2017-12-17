@@ -2,7 +2,7 @@
 
 namespace tests\factory;
 
-use dmirogin\fakeme\ModelFactory;
+use dmirogin\fakemodel\ModelFactory;
 use tests\data\BaseModel;
 use tests\data\SecondTestResolver;
 use tests\data\TestResolver;

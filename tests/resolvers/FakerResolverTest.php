@@ -2,7 +2,7 @@
 
 namespace tests\resolvers;
 
-use dmirogin\fakeme\resolvers\FakerResolver;
+use dmirogin\fakemodel\resolvers\FakerResolver;
 use tests\data\BaseModel;
 
 class FakerResolverTest extends \PHPUnit\Framework\TestCase

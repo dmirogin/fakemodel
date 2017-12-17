@@ -2,7 +2,7 @@
 
 namespace tests\resolvers;
 
-use dmirogin\fakeme\resolvers\StatesResolver;
+use dmirogin\fakemodel\resolvers\StatesResolver;
 use PHPUnit\Framework\TestCase;
 use tests\data\BaseModel;
 

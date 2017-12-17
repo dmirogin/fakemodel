@@ -1,8 +1,8 @@
 <?php
 
-namespace dmirogin\fakeme;
+namespace dmirogin\fakemodel;
 
-use dmirogin\fakeme\resolvers\Resolver;
+use dmirogin\fakemodel\resolvers\Resolver;
 use Yii;
 use yii\base\BaseObject;
 use yii\base\Model;

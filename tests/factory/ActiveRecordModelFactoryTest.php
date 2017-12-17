@@ -2,7 +2,7 @@
 
 namespace tests\factory;
 
-use dmirogin\fakeme\ModelFactory;
+use dmirogin\fakemodel\ModelFactory;
 use tests\data\ActiveRecordModel;
 use tests\DBTestCase;
 

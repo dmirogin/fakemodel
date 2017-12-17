@@ -1,4 +1,4 @@
 0.1.0
 
-- Resolvers
-- Go through coverage and reorganize tests
+- README
+- DatabaseSchemaResolver
