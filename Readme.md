@@ -96,4 +96,4 @@ $this->factory(\app\models\MyModel::class)->make();
 
 Yii::$app->factory->setModel(\app\models\MyModel::class)->states(['admin'])->setAmount(5)->make();
 ```
-See more in WIKI.
+See more in [WIKI](https://github.com/dmirogin/fakemodel/wiki).
