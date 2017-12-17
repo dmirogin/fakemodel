@@ -1,5 +1,3 @@
-### FAKE MODEL
-
 ![FAKE MODEL](http://dmirogin.ru/assets/images/fakemodel.png)
 
 This package helps you to manage faked models.
