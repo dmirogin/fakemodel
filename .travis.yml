@@ -14,4 +14,4 @@ install:
 before_script:
   - pwd
 script:
-  - ./vendor/bin/phpunit
+  - php ./vendor/bin/phpunit
