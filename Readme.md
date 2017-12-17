@@ -6,6 +6,7 @@
 </p>
 
 [![Build Status](https://travis-ci.org/dmirogin/fakemodel.svg?branch=master)](https://travis-ci.org/dmirogin/fakemodel)
+[![Latest Stable Version](https://poser.pugx.org/dmirogin/fakemodel/v/stable)](https://packagist.org/packages/dmirogin/fakemodel)
 [![GitHub license](https://img.shields.io/github/license/dmirogin/fakemodel.svg)](https://github.com/dmirogin/fakemodel/blob/master/LICENSE)
 
 This package helps you to manage faked models.
