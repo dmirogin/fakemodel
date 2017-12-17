@@ -2,10 +2,12 @@
 
 namespace dmirogin\fakemodel\resolvers;
 
+use yii\base\Component;
+
 /**
  * Resolve definitions for specified class
  */
-abstract class BaseDefinitionResolver implements Resolver
+abstract class BaseDefinitionResolver extends Component implements Resolver
 {
     /**
      * @var array

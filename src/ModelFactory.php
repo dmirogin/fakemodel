@@ -80,6 +80,8 @@ class ModelFactory extends BaseObject
      */
     protected function createModel(array $attributes = []): Model
     {
+        $this->abortIfNotYiiModel();
+
         /** @var Model $model */
         $model = new $this->model;
 
@@ -137,7 +139,19 @@ class ModelFactory extends BaseObject
     private function abortIfNotActiveRecord(): void
     {
         if (!is_subclass_of($this->model, ActiveRecord::class)) {
-            throw new \InvalidArgumentException('Model must be ActiveRecord');
+            throw new \InvalidArgumentException('Model must be yii\db\ActiveRecord');
+        }
+    }
+
+    /**
+     * Throw an error if model is not yii model
+     *
+     * @throws \InvalidArgumentException
+     */
+    private function abortIfNotYiiModel()
+    {
+        if (!is_subclass_of($this->model, Model::class)) {
+            throw new \InvalidArgumentException('Model must be yii\base\Model');
         }
     }
 

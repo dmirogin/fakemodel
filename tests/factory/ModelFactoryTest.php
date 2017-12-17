@@ -4,6 +4,7 @@ namespace tests\factory;
 
 use dmirogin\fakemodel\ModelFactory;
 use tests\data\BaseModel;
+use tests\data\JustObject;
 use tests\data\SecondTestResolver;
 use tests\data\TestResolver;
 
@@ -112,5 +113,15 @@ class ModelFactoryTest extends \PHPUnit\Framework\TestCase
         $this->expectException(\InvalidArgumentException::class);
         /** @var BaseModel $model */
         $model = $builder->setAmount(0);
+    }
+
+    public function testStoreNotModel()
+    {
+        $builder = new ModelFactory();
+        $builder->setModel(JustObject::class);
+
+        $this->expectException(\InvalidArgumentException::class);
+        /** @var BaseModel $model */
+        $model = $builder->create();
     }
 }
