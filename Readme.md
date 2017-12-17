@@ -5,6 +5,9 @@
     </a>
 </p>
 
+[![Build Status](https://travis-ci.org/dmirogin/fakemodel.svg?branch=master)](https://travis-ci.org/dmirogin/fakemodel)
+[![GitHub license](https://img.shields.io/github/license/dmirogin/fakemodel.svg)](https://github.com/dmirogin/fakemodel/blob/master/LICENSE)
+
 This package helps you to manage faked models.
 Make, create and store in database.
 This factory is another way to work with fixtures and inspired by factories in laravel.
