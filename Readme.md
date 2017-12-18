@@ -64,7 +64,7 @@ protected function factory(string $model, int $amount = 1): \dmirogin\fakemodel\
 {
     /** @var \dmirogin\fakemodel\ModelFactory $factory */
     $factory = Yii::$app->factory;
-    return $factory->setModel(\app\models\MyModel::class)->setAmount(1);
+    return $factory->setModel($model)->setAmount($amount);
 }
 ```
 
