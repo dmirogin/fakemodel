@@ -144,7 +144,7 @@ class ModelFactory extends BaseObject
      *
      * @throws \InvalidArgumentException
      */
-    private function abortIfNotActiveRecord(): void
+    private function abortIfNotActiveRecord()
     {
         if (!is_subclass_of($this->model, ActiveRecord::class)) {
             throw new \InvalidArgumentException('Model must be yii\db\ActiveRecord');
