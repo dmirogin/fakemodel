@@ -15,7 +15,7 @@
     }
   ],
   "require": {
-    "php": ">=7.1.0",
+    "php": ">=7.0.0",
     "yiisoft/yii2": "2.*",
     "fzaninotto/faker": "^1.7.0"
   },

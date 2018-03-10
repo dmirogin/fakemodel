@@ -14,7 +14,7 @@ Make, create and store in database.
 This factory is another way to work with fixtures and inspired by factories in laravel.
 
 ### Requirements
-- PHP 7.1 +
+- PHP 7.0 +
 
 ### Instalation
 ```php
